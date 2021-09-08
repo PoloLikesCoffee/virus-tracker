@@ -1,0 +1,11 @@
+@use '../utils' as *;
+
+.chart {
+	display: flex;
+	justify-content: center;
+	width: 65%;
+
+	@include breakpoint-down(small_medium) {
+		width: 100%;
+	}
+}

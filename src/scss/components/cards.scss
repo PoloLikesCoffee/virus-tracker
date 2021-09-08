@@ -1,0 +1,25 @@
+@use '../utils' as *;
+
+.cards {
+	margin: rem(30) 0;
+
+	&__card {
+		margin: 0 2% !important;
+
+		&__infected {
+			border-top: rem(10) solid var(--red);
+		}
+
+		&__recovered {
+			border-top: rem(10) solid var(--green);
+		}
+
+		&__deaths {
+			border-top: rem(10) solid var(--dark-gray);
+		}
+
+		@include breakpoint-down(small_medium) {
+			margin: 2% 0 !important;
+		}
+	}
+}
